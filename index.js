@@ -1,13 +1,13 @@
 const Discord = require('discord.js')
-const { Client, MessageEmbed } = require('discord.js');
-const { Command } = require('discord.js-commando');
-const client = new Client();
+const client = new bot();
+const  bot  = require('discord.js');
+
 
 
 
 const talkedRecently = new Set();
 
-client.on('ready', () => {
+bot.on('ready', () => {
   
   console.log('Razador {EKAV BOT READY}')
 
@@ -15,4 +15,4 @@ client.on('ready', () => {
 )
  
 
-client.login(process.env.token);
+bot.login(process.env.token);
